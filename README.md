@@ -30,6 +30,28 @@ git clone https://github.com/SaumilShah66/strolling_turtlebot
 cd ..
 catkin_make
 ``` 
+## How to run
+
+You can run the simulation with just a single launch file. You can use following commands to run the simulation.
+```
+cd catkin_ws
+source devel/setup.bash
+roslaunch strolling_turtlebot strolling_turtlebot.launch
+```
+
+To stop the recording use the following command in new terminal
+```
+rosnode kill record
+```
+
+
+
+This launch file takes one argument "record", wwhich allows you to record published messages. In this filw we have disabled the image data as it takes too much space on disk. You can use the following command to start the simulation with the enabling record flag.
+
+```
+roslaunch strolling_turtlebot strolling_turtlebot.launch record:="enable"
+```
+
 
 ```
 rosbag info results/stroller.bag
