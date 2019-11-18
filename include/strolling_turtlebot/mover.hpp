@@ -1,11 +1,4 @@
 /**
- * @file mmover.hpp
- * @brief class declaration for sensing and moving tturtlebot
- * @author Saumil Shah
- *
- * Copyright [2019] Saumil Shah
- * All rights reserved.
- *
  * MIT License
 
  * Copyright (c) 2019 Saumil Shah
@@ -29,6 +22,14 @@
  * SOFTWARE.
  **/
 
+/*
+ * @file mover.hpp
+ * @brief class declaration for sensing and moving turtlebot
+ * @author Saumil Shah
+ *
+ * Copyright [2019] Saumil Shah
+ * All rights reserved.
+ */
 #include <sensor_msgs/LaserScan.h>
 #include "ros/ros.h"
 #include "geometry_msgs/Twist.h"
