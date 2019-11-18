@@ -38,13 +38,7 @@ cd catkin_ws
 source devel/setup.bash
 roslaunch strolling_turtlebot strolling_turtlebot.launch
 ```
-
-To stop the recording use the following command in new terminal
-```
-rosnode kill record
-```
-
-
+## Record and replay data
 
 This launch file takes one argument "record", wwhich allows you to record published messages. In this filw we have disabled the image data as it takes too much space on disk. You can use the following command to start the simulation with the enabling record flag.
 
@@ -52,6 +46,12 @@ This launch file takes one argument "record", wwhich allows you to record publis
 roslaunch strolling_turtlebot strolling_turtlebot.launch record:="enable"
 ```
 
+To stop the recording use the following command in new terminal
+```
+rosnode kill record
+```
+
+A bag file will be created and saved in results folder, with the "stroller.bag" name. You can use info command to see the details about the bag file. 
 
 ```
 rosbag info results/stroller.bag
@@ -105,4 +105,16 @@ topics:       /clock                                            28548 msgs    : 
               /scan                                               248 msgs    : sensor_msgs/LaserScan                
               /tf                                               29304 msgs    : tf2_msgs/TFMessage                   
               /tf_static                                            1 msg     : tf2_msgs/TFMessage
+```
+
+You can play the recorded data again, which can be used for testing, debugging or training purposes. Use following command to play the bag file.
+
+#### In terminal 1
+```
+roscore
+```
+#### In terminal 2
+```
+cd catkin_ws
+rosbag play src/strolling_turtlebot/results/stroller.bag
 ```
