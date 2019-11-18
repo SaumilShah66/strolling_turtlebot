@@ -36,13 +36,12 @@
 #include "geometry_msgs/Twist.h"
 #include "strolling_turtlebot/mover.hpp"
 
-
 int main(int argc, char **argv) {
-	/// Initiate node named stroller
-	ros::init(argc, argv, "stroller");
-	/// Create instance of class Stroll
-	Mover botStroller;
-	ros::spin();
-	return 0;
-	}
+  /// Initiate node named stroller
+  ros::init(argc, argv, "stroller");
+  /// Create instance of class Stroll
+  Mover botStroller;
+  ros::spin();
+  return 0;
+}
 
