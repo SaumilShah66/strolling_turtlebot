@@ -30,6 +30,7 @@
  * Copyright [2019] Saumil Shah
  * All rights reserved.
  */
+
 #include <sensor_msgs/LaserScan.h>
 #include "ros/ros.h"
 #include "geometry_msgs/Twist.h"
@@ -94,11 +95,11 @@ class Mover {
    * @param none
    * @return none
    */
-  Stroll();
+  Mover();
   /*
    * @brief Class destructor
    * @param none
    * @return none
    */
-  ~Stroll();
-}
+  ~Mover();
+};
