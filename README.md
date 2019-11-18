@@ -118,3 +118,20 @@ roscore
 cd catkin_ws
 rosbag play src/strolling_turtlebot/results/stroller.bag
 ```
+## Results
+
+This is how turtlebot moves in the simulated environment. Note that this video is recorded at 5x speed
+![](https://github.com/SaumilShah66/strolling_turtlebot/tree/Week12_HW/results/demo1.gif)
+
+You can add different object while the simulation is running. This demo video shows that.
+![](https://github.com/SaumilShah66/strolling_turtlebot/tree/Week12_HW/results/demo2.gif)
+
+## Cpplint and cppcheck errors
+
+Google c++ stylguide has been used for this package. You can view if any error has been made, by using following command.
+
+```
+cd catkin_ws/src/strolling_trutlebot
+cpplint include/*/*.hpp src/*.cpp
+cppcheck include/*/*.hpp src/*.cpp
+```
