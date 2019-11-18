@@ -31,6 +31,8 @@
  * All rights reserved.
  */
 
+#ifndef INCLUDE_STROLLING_TURTLEBOT_MOVER_HPP_
+#define INCLUDE_STROLLING_TURTLEBOT_MOVER_HPP_
 #include <sensor_msgs/LaserScan.h>
 #include "ros/ros.h"
 #include "geometry_msgs/Twist.h"
@@ -103,3 +105,5 @@ class Mover {
    */
   ~Mover();
 };
+
+#endif  // INCLUDE_STROLLING_TURTLEBOT_MOVER_HPP_
