@@ -122,11 +122,11 @@ rosbag play src/strolling_turtlebot/results/stroller.bag
 
 This is how turtlebot moves in the simulated environment. Note that this video is recorded at 5x speed
 
-![demo1](https://github.com/SaumilShah66/strolling_turtlebot/tree/Week12_HW/results/demo1.gif)
+![demo1](results/demo1.gif)
 
 You can add different object while the simulation is running. This demo video shows that.
 
-![demo2](https://github.com/SaumilShah66/strolling_turtlebot/tree/Week12_HW/results/demo2.gif)
+![demo2](results/demo2.gif)
 
 ## Cpplint and cppcheck errors
 
