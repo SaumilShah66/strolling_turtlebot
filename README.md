@@ -9,11 +9,27 @@ Turtlebot is a robot made for research and educational purposes. It has a stereo
 
 ## Dependencies
 
-These are the dependencies required to use this package
+These are the dependencies required to use this package. You can install ROS kientic with the help of [this](http://wiki.ros.org/kinetic/Installation/Ubuntu) instructions.
 
 * Ubuntu 16.04 LTS
 * ROS Kinetic
 * Gazebo 7.0
+* turtlebot packages
+
+Turtlebot packages required for this package can be installed with this command.
+```
+sudo apt-get install ros-kinetic-turtlebot-gazebo ros-kinetic-turtlebot-apps ros-kinetic-turtlebot-rviz-launchers
+```
+
+## How to build
+
+When you have all the dependencies installed and you have a ready catkin_ws, you can use following commands to download and build package.
+```
+cd catkin_ws/src
+git clone https://github.com/SaumilShah66/strolling_turtlebot
+cd ..
+catkin_make
+``` 
 
 ```
 rosbag info results/stroller.bag
